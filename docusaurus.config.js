@@ -7,8 +7,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 	title: "Sekund",
-	tagline: "Share with care, publish with grace",
-	favicon: "img/favicon.ico",
+	tagline: "A social network for thinkers",
+	favicon: "img/favicon.svg",
 
 	// Set the production url of your site here
 	url: "https://your-docusaurus-test-site.com",
@@ -18,8 +18,8 @@ const config = {
 
 	// GitHub pages deployment config.
 	// If you aren't using GitHub pages, you don't need these.
-	organizationName: "facebook", // Usually your GitHub org/user name.
-	projectName: "docusaurus", // Usually your repo name.
+	organizationName: "sekund", // Usually your GitHub org/user name.
+	projectName: "sekund-www", // Usually your repo name.
 
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "warn",
@@ -60,11 +60,11 @@ const config = {
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
 			// Replace with your project's social card
-			image: "img/docusaurus-social-card.jpg",
+			// image: "img/docusaurus-social-card.jpg",
 			navbar: {
 				title: "Sekund",
 				logo: {
-					alt: "My Site Logo",
+					alt: "Sekund Logo",
 					src: "img/logo.svg",
 				},
 				items: [
@@ -76,7 +76,7 @@ const config = {
 					},
 					{ to: "/blog", label: "Blog", position: "left" },
 					{
-						href: "https://github.com/facebook/docusaurus",
+						href: "https://github.com/Sekund",
 						label: "GitHub",
 						position: "right",
 					},
@@ -98,16 +98,12 @@ const config = {
 						title: "Community",
 						items: [
 							{
-								label: "Stack Overflow",
-								href: "https://stackoverflow.com/questions/tagged/docusaurus",
-							},
-							{
 								label: "Discord",
-								href: "https://discordapp.com/invite/docusaurus",
+								href: "https://discordapp.com/invite/sekund",
 							},
 							{
 								label: "Twitter",
-								href: "https://twitter.com/docusaurus",
+								href: "https://twitter.com/sekund_io",
 							},
 						],
 					},
@@ -120,12 +116,12 @@ const config = {
 							},
 							{
 								label: "GitHub",
-								href: "https://github.com/facebook/docusaurus",
+								href: "https://github.com/Sekund",
 							},
 						],
 					},
 				],
-				copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+				copyright: `Copyright © ${new Date().getFullYear()} Palacehotel software, sprl.`,
 			},
 			prism: {
 				theme: lightCodeTheme,

@@ -5,26 +5,47 @@
  */
 
 /* You can override the default Infima variables here. */
+@import "https://use.typekit.net/fua5fus.css";
+
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+	--ifm-color-primary: #d55268;
+	--ifm-color-primary-dark: #eaa3a7;
+	--ifm-color-primary-darker: #e48991;
+	--ifm-color-primary-darkest: #dc707c;
+	--ifm-color-primary-light: #e6ccce;
+	--ifm-color-primary-lighter: #e6ccce;
+	--ifm-color-primary-lightest: #e6ccce;
+	--ifm-code-font-size: 95%;
+	--ifm-font-family-base: filson-soft, sans-serif;
+	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
+p {
+	font-family: bely, serif;
+	font-size: 110%;
+	line-height: 1.35rem;
+	font-weight: 400;
+}
+
+.hero__title,
+.navbar__title {
+	font-family: bely-display, serif;
+	color: #2a2e3b;
+}
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+[data-theme="dark"] {
+	--ifm-color-primary: #d55268;
+	--ifm-color-primary-dark: #eaa3a7;
+	--ifm-color-primary-darker: #e48991;
+	--ifm-color-primary-darkest: #dc707c;
+	--ifm-color-primary-light: #e6ccce;
+	--ifm-color-primary-lighter: #e6ccce;
+	--ifm-color-primary-lightest: #e6ccce;
+	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .hero__title,
+[data-theme="dark"] .navbar__title {
+	font-family: bely-display, serif;
+	color: #e3dedd;
 }
