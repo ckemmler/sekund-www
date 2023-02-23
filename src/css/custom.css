@@ -20,15 +20,22 @@
 	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-.table-of-contents__link.toc-highlight, {
+.table-of-contents__link {
 	font-family: filson-soft, sans-serif;
 	line-height: 1.3rem;
+	font-size: 110%;
 	font-weight: 300;
 }
 
-p, li {
+.menu__link {
+	font-family: filson-soft, sans-serif;
+	font-weight: 300;
+}
+
+p,
+li {
 	font-family: bely, serif;
-	font-size: 120%;
+	/* font-size: 120%; */
 	line-height: 1.5rem;
 	font-weight: 400;
 }
