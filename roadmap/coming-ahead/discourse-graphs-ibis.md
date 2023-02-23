@@ -14,6 +14,6 @@ What do we need? Ultimately a target note and a type of relationship our note ha
 - **Evidence**: evidence is either subordinate to an assertion, in which case it validates or invalidates it (support/oppose). Evidence can also be directly subordinate to the subject, in which case it informs or generates arguments.
 - **Sources**: are subordinate to evidence in order to support or contextualise. Sources include all the documentation that makes the evidence tangible.
 
-![IBIS Schema] (ibis-schema.svg)
+![IBIS Schema](/img/ibis-schema.svg)
 
 Integrating this functionality for a discussion group seems to us to be welcome for certain knowledge production approaches and for research work. This need has not been formally requested by Sekund users and evaluating it would be a good thing. Also, please feel free to tell us about your practices or needs that such a feature could fill.
