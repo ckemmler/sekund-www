@@ -11,3 +11,5 @@ It's really useful to have this possibility in the note because it serves as a f
 When you post a note to A independently of B. The discussion will then take place with A and B. Both will see what is written in the discussion.
 You can remove the discussion by deleting the fence code and then put it back. Deleting it will not remove the content from the database.
 Please feel free to give feedback on this feature, which we feel is central to sharing.
+
+![Discussion capture](/img/discussion-capture.svg)

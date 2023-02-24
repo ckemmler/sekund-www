@@ -17,7 +17,7 @@ The information relating to your profile is to be put in "profile". Each user wi
 
 ![group detail as admin capture](/img/group-detail-as-admin-capture.svg)
 
-### Asu user
+### As user
 
 ![group detail as user capture](/img/group-detail-as-user-capture.svg)
 
