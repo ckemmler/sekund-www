@@ -6,131 +6,137 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-	title: "Sekund",
-	tagline: "A social network for thinkers",
-	favicon: "img/favicon.svg",
+  title: "sekund",
+  tagline: "A social network for thinkers",
+  favicon: "img/favicon.svg",
 
-	// Set the production url of your site here
-	url: "https://sekund.io",
-	// Set the /<baseUrl>/ pathname under which your site is served
-	// For GitHub pages deployment, it is often '/<projectName>/'
-	baseUrl: "/",
+  // Set the production url of your site here
+  url: "https://sekund.io",
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
+  baseUrl: "/",
 
-	// GitHub pages deployment config.
-	// If you aren't using GitHub pages, you don't need these.
-	organizationName: "sekund", // Usually your GitHub org/user name.
-	projectName: "sekund-www", // Usually your repo name.
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: "sekund", // Usually your GitHub org/user name.
+  projectName: "sekund-www", // Usually your repo name.
 
-	onBrokenLinks: "throw",
-	onBrokenMarkdownLinks: "warn",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
-	// Even if you don't use internalization, you can use this field to set useful
-	// metadata like html lang. For example, if your site is Chinese, you may want
-	// to replace "en" with "zh-Hans".
-	i18n: {
-		defaultLocale: "en",
-		locales: ["en"],
-	},
+  // Even if you don't use internalization, you can use this field to set useful
+  // metadata like html lang. For example, if your site is Chinese, you may want
+  // to replace "en" with "zh-Hans".
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en"],
+  },
 
-	presets: [
-		[
-			"classic",
-			/** @type {import('@docusaurus/preset-classic').Options} */
-			({
-				docs: {
-					sidebarPath: require.resolve("./sidebars.js"),
-					// Please change this to your repo.
-					// Remove this to remove the "edit this page" links.
-					editUrl: "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-				},
-				blog: false,
-				theme: {
-					customCss: require.resolve("./src/css/custom.css"),
-				},
-				pages: {
-					path: "src/pages",
-					routeBasePath: "/",
-					include: ["**/*.{js,jsx,ts,tsx,md,mdx}"],
-					exclude: ["**/_*.{js,jsx,ts,tsx,md,mdx}", "**/_*/**", "**/*.test.{js,jsx,ts,tsx}", "**/__tests__/**"],
-					mdxPageComponent: "@theme/MDXPage",
-					beforeDefaultRemarkPlugins: [],
-					beforeDefaultRehypePlugins: [],
-				},
-			}),
-		],
-	],
+  presets: [
+    [
+      "classic",
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
+        docs: {
+          sidebarPath: require.resolve("./sidebars.js"),
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+        },
+        blog: false,
+        theme: {
+          customCss: require.resolve("./src/css/custom.css"),
+        },
+        pages: {
+          path: "src/pages",
+          routeBasePath: "/",
+          include: ["**/*.{js,jsx,ts,tsx,md,mdx}"],
+          exclude: [
+            "**/_*.{js,jsx,ts,tsx,md,mdx}",
+            "**/_*/**",
+            "**/*.test.{js,jsx,ts,tsx}",
+            "**/__tests__/**",
+          ],
+          mdxPageComponent: "@theme/MDXPage",
+          beforeDefaultRemarkPlugins: [],
+          beforeDefaultRehypePlugins: [],
+        },
+      }),
+    ],
+  ],
 
-	plugins: [
-		[
-			"@docusaurus/plugin-content-docs",
-			{
-				id: "roadmap",
-				path: "roadmap",
-				routeBasePath: "roadmap",
-				sidebarPath: require.resolve("./roadmapSidebar.js"),
-			},
-		],
-	],
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "roadmap",
+        path: "roadmap",
+        routeBasePath: "roadmap",
+        sidebarPath: require.resolve("./roadmapSidebar.js"),
+      },
+    ],
+  ],
 
-	themeConfig:
-		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-		({
-			// Replace with your project's social card
-			// image: "img/docusaurus-social-card.jpg",
-			navbar: {
-				title: "Sekund",
-				logo: {
-					alt: "Sekund Logo",
-					src: "img/logo.svg",
-				},
-				items: [
-					{
-						docsPluginId: "roadmap",
-						type: "doc",
-						docId: "intro",
-						position: "left",
-						label: "Roadmap",
-					},
-					{
-						href: "https://github.com/Sekund",
-						label: "GitHub",
-						position: "right",
-					},
-				],
-			},
-			footer: {
-				style: "dark",
-				links: [
-					{
-						title: "Community",
-						items: [
-							{
-								label: "Discord",
-								href: "https://discordapp.com/invite/sekund",
-							},
-							{
-								label: "Twitter",
-								href: "https://twitter.com/sekund_io",
-							},
-						],
-					},
-					{
-						title: "More",
-						items: [
-							{
-								label: "GitHub",
-								href: "https://github.com/Sekund",
-							},
-						],
-					},
-				],
-				copyright: `Copyright © ${new Date().getFullYear()} Palacehotel software, sprl.`,
-			},
-			prism: {
-				theme: lightCodeTheme,
-				darkTheme: darkCodeTheme,
-			},
-		}),
+  themeConfig:
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    ({
+      // Replace with your project's social card
+      // image: "img/docusaurus-social-card.jpg",
+      navbar: {
+        title: "",
+        logo: {
+          alt: "Sekund Logo",
+          src: "img/sekund-logo-color-pos.svg",
+        },
+        items: [
+          {
+            docsPluginId: "roadmap",
+            type: "doc",
+            docId: "intro",
+            position: "left",
+            label: "Roadmap",
+          },
+          {
+            href: "https://github.com/Sekund",
+            label: "GitHub",
+            position: "right",
+          },
+        ],
+      },
+      footer: {
+        style: "dark",
+        links: [
+          {
+            title: "Community",
+            items: [
+              {
+                label: "Discord",
+                href: "https://discordapp.com/invite/sekund",
+              },
+              {
+                label: "Twitter",
+                href: "https://twitter.com/sekund_io",
+              },
+            ],
+          },
+          {
+            title: "More",
+            items: [
+              {
+                label: "GitHub",
+                href: "https://github.com/Sekund",
+              },
+            ],
+          },
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()} Palacehotel software, sprl.`,
+      },
+      prism: {
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
+      },
+    }),
 };
 
 module.exports = config;

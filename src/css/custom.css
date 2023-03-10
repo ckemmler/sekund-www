@@ -8,13 +8,13 @@
 @import "https://use.typekit.net/fua5fus.css";
 
 :root {
-	--ifm-color-primary: #d55268;
-	--ifm-color-primary-dark: #eaa3a7;
-	--ifm-color-primary-darker: #e48991;
-	--ifm-color-primary-darkest: #dc707c;
-	--ifm-color-primary-light: #e6ccce;
-	--ifm-color-primary-lighter: #e6ccce;
-	--ifm-color-primary-lightest: #e6ccce;
+	--ifm-color-primary:#f4526a;
+	--ifm-color-primary-dark: #d73b54;
+	--ifm-color-primary-darker: #b52b41;
+	--ifm-color-primary-darkest: #8e1e30;
+	--ifm-color-primary-light: #f87d92;
+	--ifm-color-primary-lighter: #fba6b4;
+	--ifm-color-primary-lightest: #fcccd3;
 	--ifm-code-font-size: 95%;
 	--ifm-font-family-base: filson-soft, sans-serif;
 	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
@@ -39,14 +39,23 @@ p{
 	font-weight: 400;
 }
 
-.hero__title,
-.navbar__title {
+.hero__title{
 	font-family: bely-display, serif;
 	color: #2a2e3b;
+	font-size: 5rem;
+	line-height: 5rem;
+	margin-bottom: 0rem;
+
 }
+.hero__subtitle{
+	font-family: filson-soft, sans-serif;
+	font-weight: 300;
+	font-size: 1.2rem;
+}
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-	--ifm-color-primary: #d55268;
+	--ifm-color-primary: #f4526a;
 	--ifm-color-primary-dark: #eaa3a7;
 	--ifm-color-primary-darker: #e48991;
 	--ifm-color-primary-darkest: #dc707c;
@@ -71,4 +80,9 @@ p{
 }
 .footer__link-item{
 	font-family: filson-soft, sans-serif;
+}
+.p-feature{
+	font-family: filson-soft, sans-serif;
+	font-weight: 300;
+	font-size: 1rem;	
 }
