@@ -32,11 +32,10 @@
 	font-weight: 300;
 }
 
-p,
-li {
+p{
 	font-family: bely, serif;
-	/* font-size: 120%; */
-	line-height: 1.5rem;
+	font-size: 1.2rem;
+	line-height: 1.7rem;
 	font-weight: 400;
 }
 
@@ -61,4 +60,15 @@ li {
 [data-theme="dark"] .navbar__title {
 	font-family: bely-display, serif;
 	color: #e3dedd;
+}
+
+.breadcrumbs__link{
+	font-family: filson-soft, sans-serif;
+}
+.footer__copyright{
+	font-weight: 300;
+	font-size: 0.8rem;
+}
+.footer__link-item{
+	font-family: filson-soft, sans-serif;
 }

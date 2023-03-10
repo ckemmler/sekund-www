@@ -10,34 +10,51 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Works Offline',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Groups',
+    Svg: require('@site/static/img/icon-group.svg').default,
+    description: (
+      <>
+       Whatsapp-like groups allow anyone to follow through on specific topics.
+      </>
+    ),
+  },
+  {
+    title: 'Share',
+    Svg: require('@site/static/img/icon-share.svg').default,
+    description: (
+      <>
+        Share your notes with your contacts or within a group.
+      </>
+    ),
+  },
+  {
+    title: 'Discuss',
+    Svg: require('@site/static/img/icon-chat.svg').default,
+    description: (
+      <>
+        What good would be a notes sharing platform if you weren't able to discuss? And Sekund's chat supports Markdown, of course.
+      </>
+    ),
+  },
+  {
+    title: 'Instant notifications',
+    Svg: require('@site/static/img/icon-notification.svg').default,
+    description: (
+      <>
+       Get instantly notified when someone shares something with you, or comments on some of your shared notes.
+      </>
+    ),
+  },
+  {
+    title: 'Works offline',
+    Svg: require('@site/static/img/icon-offline.svg').default,
     description: (
       <>
        Any shared note that you have opened is downloaded and saved on your disk, along with its dependencies.
       </>
     ),
   },
-  {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
+
 ];
 
 function Feature({title, Svg, description}: FeatureItem) {
@@ -47,7 +64,7 @@ function Feature({title, Svg, description}: FeatureItem) {
         <Svg className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
+        <h2>{title}</h2>
         <p>{description}</p>
       </div>
     </div>
