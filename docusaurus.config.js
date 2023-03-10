@@ -88,6 +88,7 @@ const config = {
         logo: {
           alt: "Sekund Logo",
           src: "img/sekund-logo-color-pos.svg",
+					srcDark: "img/sekund-logo-color-neg.svg"
         },
         items: [
           {
